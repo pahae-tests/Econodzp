@@ -1,0 +1,49 @@
+@import "Tailwindcss";
+
+body {
+    /* background-image: url('../../public/bg1.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* backdrop-filter: blur(2px); */
+}
+
+* {
+    scrollbar-width: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clay-input {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.clay-input-field {
+    box-shadow:
+        5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.clay-input-field:focus {
+    box-shadow:
+        inset 3px 3px 5px rgba(0, 0, 0, 0.2),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.05);
+}
+
+.clay-button {
+    box-shadow:
+        3px 3px 6px rgba(0, 0, 0, 0.2),
+        -3px -3px 6px rgba(255, 255, 255, 0.05);
+    border: none;
+}
+
+.clay-button:active {
+    box-shadow:
+        inset 2px 2px 4px rgba(0, 0, 0, 0.2),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.05);
+}
