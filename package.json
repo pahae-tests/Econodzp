@@ -1,0 +1,41 @@
+{
+  "name": "bpf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.5",
+    "@react-three/fiber": "^9.3.0",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cookie": "^1.0.2",
+    "cookie.js": "^7.0.1",
+    "d3": "^7.9.0",
+    "dotenv": "^17.2.0",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.5.0",
+    "formidable": "^3.5.4",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.525.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4",
+    "next": "15.4.2",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.2",
+    "tailwindcss": "^4"
+  }
+}
