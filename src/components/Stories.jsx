@@ -7,7 +7,7 @@ const Stories = ({ people, session }) => {
     }
     
     return (
-        <div className='z-50'>
+        <div className='z-30'>
             {/* Stories Section */}
             <div className="overflow-x-auto">
                 <div className="flex gap-4 pb-4 overflow-x-scroll">
@@ -39,5 +39,6 @@ const Stories = ({ people, session }) => {
         </div>
     )
 }
+
 
 export default Stories;
