@@ -59,7 +59,7 @@ const Index = ({ session }) => {
   }
 
   return (
-    <div className="w-full mx-auto px-4 py-6 flex flex-col" dir="rtl">
+    <div className="w-full lg:max-w-2xl mx-auto px-4 py-6 flex flex-col" dir="rtl">
       <Stories people={people} session={session} />
 
       {/* تغذية المنشورات */}
@@ -158,4 +158,5 @@ export async function getServerSideProps({ req, res }) {
       }
     },
   };
+
 }
