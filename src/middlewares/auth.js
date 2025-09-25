@@ -15,7 +15,7 @@ export function verifyAuth(req, res) {
             _id: user._id,
             firstname: user.firstname,
             lastname: user.lastname,
-            img: user.img || "user.jpg",
+            img: user.img || "/user.jpg",
             lvl: user.lvl || 0,
             email: user.email,
             sex: user.sex,
@@ -26,4 +26,5 @@ export function verifyAuth(req, res) {
         console.error("Invalid token", error);
         return null;
     }
+
 }
