@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div dir="rtl" className="lg:hidden fixed bottom-0 left-0 right-0 bg-black/80 backdrop-blur-2xl border-t border-gray-800/50 p-3 z-50">
+    <div dir="rtl" className="lg:hidden fixed bottom-0 left-0 right-0 bg-black/60 backdrop-blur-2xl border-t border-gray-800/50 p-3 z-50">
       <div className="flex justify-around items-center">
         {elements.map((el, k) => {
           if (el.isAdd) {
@@ -42,5 +42,6 @@ const Navbar = () => {
     </div>
   );
 };
+
 
 export default Navbar;
