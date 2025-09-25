@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Header = ({ image }) => {
   return (
-    <div dir="rtl" className="lg:hidden fixed top-0 w-full bg-black/80 backdrop-blur-2xl border-b border-gray-800/50 p-3 z-40">
+    <div dir="rtl" className="lg:hidden fixed top-0 w-full bg-black/80 backdrop-blur-2xl border-b border-gray-800/50 p-3 z-40 bg-black/60">
       <div className="flex items-center justify-between">
         <div className="flex gap-4 items-center">
           <Link href="/Messages" className="relative">
@@ -23,5 +23,6 @@ const Header = ({ image }) => {
     </div>
   )
 }
+
 
 export default Header;
