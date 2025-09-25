@@ -12,7 +12,7 @@ const Header = ({ image }) => {
             <div className="absolute -top-1 -left-1 w-3 h-3 bg-pink-500 rounded-full animate-pulse"></div>
           </Link>
           <Link href="/Profile" className="relative w-8 h-8 rounded-full overflow-hidden">
-            <img src={image} className="text-gray-300 hover:text-pink-400 transition-colors cursor-pointer" />
+            <img src={image} className="text-gray-300 w-full h-full hover:text-pink-400 transition-colors cursor-pointer" />
           </Link>
         </div>
 
@@ -26,3 +26,4 @@ const Header = ({ image }) => {
 
 
 export default Header;
+
