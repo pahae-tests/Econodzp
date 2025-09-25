@@ -75,7 +75,7 @@ export default function MyApp({ Component, pageProps }) {
             ${!["/Login", "/Register"].includes(router.pathname) && "mb-24 lg:mr-52"}
           `}
         >
-          {!["/Messages", "/Chat", "/Login", "/Register"].includes(router.pathname) && <Header image={session.img} />}
+          {!["/Messages", "/Chat", "/Login", "/Register"].includes(router.pathname) && <Header image={session?.img || "/user.jpg"} />}
           <Component {...pageProps} setNotif={setNotif} />
         </div>
 
@@ -117,4 +117,5 @@ export async function getServerSideProps({ req, res }) {
       }
     },
   };
+
 }
