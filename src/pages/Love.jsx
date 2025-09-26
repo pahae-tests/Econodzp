@@ -109,7 +109,7 @@ const Love = ({ session }) => {
                 <div className="text-center mb-8 pt-8">
                     <div className="flex items-center justify-center gap-3 mb-4">
                         <Heart className="w-8 h-8 text-pink-500" />
-                        <h1 className="text-3xl font-bold text-white">تصاحب ب بوطونة وحدة</h1>
+                        <h1 className="text-3xl font-bold text-white">تصاحب{session.sex === 'female' && 'ي'} ب بوطونة وحدة</h1>
                         <Heart className="w-8 h-8 text-pink-500" />
                     </div>
                     <p className="text-gray-400 text-lg">
@@ -268,4 +268,5 @@ export async function getServerSideProps({ req, res }) {
       }
     },
   };
+
 }
