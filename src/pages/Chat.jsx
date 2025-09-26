@@ -178,7 +178,7 @@ const Room = ({ session }) => {
 
             {/* حقل إرسال الرسالة */}
             <div className='w-full flex justify-center items-center'>
-            <div className="bg-gray-950/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 shadow-2xl px-3 py-2 w-full">
+            <div className="bg-gray-950/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 shadow-2xl w-fit">
                 <form onSubmit={handleSendMessage} className="flex items-center gap-4 flex-row-reverse">
                     <button
                         type="submit"
@@ -233,3 +233,4 @@ export async function getServerSideProps({ req, res }) {
     };
 
 }
+
