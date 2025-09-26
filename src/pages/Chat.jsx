@@ -178,31 +178,31 @@ const Room = ({ session }) => {
 
             {/* حقل إرسال الرسالة */}
             <div className='w-full flex justify-center items-center'>
-            <div className="bg-gray-950/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 shadow-2xl w-fit">
-                <form onSubmit={handleSendMessage} className="flex items-center gap-4 flex-row-reverse">
-                    <button
-                        type="submit"
-                        disabled={!newMessage.trim()}
-                        className={`p-2 rounded-full transition-all duration-300 ${newMessage.trim()
-                            ? 'bg-gradient-to-l from-pink-500 via-purple-500 to-cyan-500 hover:shadow-lg hover:shadow-pink-500/25 hover:scale-105'
-                            : 'bg-gray-700 cursor-not-allowed'}`}
-                    >
-                        <Send className={`w-5 h-5 ${newMessage.trim() ? 'text-white' : 'text-gray-500'}`} />
-                    </button>
-                    <input
-                        type="text"
-                        value={newMessage}
-                        onChange={(e) => setNewMessage(e.target.value)}
-                        placeholder="اكتب رسالتك..."
-                        className="flex-1 bg-gray-800/50 border border-gray-700 rounded-full px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-transparent transition-all text-right"
-                        onKeyPress={(e) => {
-                            if (e.key === 'Enter') {
-                                handleSendMessage(e);
-                            }
-                        }}
-                    />
-                </form>
-            </div>
+                <div className="bg-gray-950/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 shadow-2xl w-fit">
+                    <form onSubmit={handleSendMessage} className="flex items-center gap-4 flex-row-reverse">
+                        <button
+                            type="submit"
+                            disabled={!newMessage.trim()}
+                            className={`p-2 rounded-full transition-all duration-300 ${newMessage.trim()
+                                ? 'bg-gradient-to-l from-pink-500 via-purple-500 to-cyan-500 hover:shadow-lg hover:shadow-pink-500/25 hover:scale-105'
+                                : 'bg-gray-700 cursor-not-allowed'}`}
+                        >
+                            <Send className={`w-5 h-5 ${newMessage.trim() ? 'text-white' : 'text-gray-500'}`} />
+                        </button>
+                        <input
+                            type="text"
+                            value={newMessage}
+                            onChange={(e) => setNewMessage(e.target.value)}
+                            placeholder="اكتب رسالتك..."
+                            className="flex-1 bg-gray-800/50 border border-gray-700 rounded-full px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-transparent transition-all text-right"
+                            onKeyPress={(e) => {
+                                if (e.key === 'Enter') {
+                                    handleSendMessage(e);
+                                }
+                            }}
+                        />
+                    </form>
+                </div>
             </div>
         </div>
     );
@@ -231,6 +231,4 @@ export async function getServerSideProps({ req, res }) {
             }
         },
     };
-
 }
-
